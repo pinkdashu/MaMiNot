@@ -15,6 +15,18 @@
     font-size: 1rem;
     color:#a3cbc7;
   }
+  .audio-player{
+    background-color:transparent; 
+    border-style:none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color:#a3cbc7;
+  }
   .container{
     position: absolute;
     display: flex;
