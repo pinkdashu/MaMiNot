@@ -1,0 +1,62 @@
+.body{
+    background-color: #cefffa;
+  }
+  .download-btn{
+    background-color:transparent;
+    border-style:none;
+    color:#5c827d;
+  }
+  .container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -193.5px;
+    margin-top: -124px;
+  }
+  .radio-btn{
+  background-color:transparent;
+  border-style:none;
+  }
+  .translate-btn{
+  background-color:transparent;
+  border-style:none;
+  }
+  .shadow{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    margin-left: -243.5px;
+    margin-top: -35.5px;
+  }
+  @keyframes turnL{
+    from{transform:rotateZ(0deg);}
+    to{transform:rotateZ(360deg);}
+  }
+  @keyframes turnR{
+    from{transform:rotateZ(360deg);}
+    to{transform:rotateZ(0deg);}
+  }
+  @font-face {
+            font-family: 'Anton';
+            src: url('font-files/Anton-Regular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+  }
+  #svg_71{
+    transform-origin:264.859px 112.982px;
+    animation-name:turnL;
+    animation-timing-function: linear;
+    animation-iteration-count: 0;
+    animation-duration:3s;
+  }
+  #svg_113{
+    transform-origin:122.141px 112.982px;
+    animation-name:turnL;
+    animation-iteration-count: 0;
+    animation-timing-function: linear;
+    animation-duration:3s;
+  }
+  
+  #svg_4{
+    clip-path: inset(32px 74px 31px 88px);
+  }

@@ -1,11 +1,9 @@
-//const { current } = require("hexo/lib/plugins/helper/is");
-
 const recordBtn = document.querySelector(".translate-btn");
 const downloadBtn = document.querySelector(".download-btn");
 const player = document.querySelector(".audio-player");
-
+const gearL = document.querySelector("#svg_71");
+const gearR = document.querySelector("#svg_113");
 if (navigator.mediaDevices.getUserMedia) {
-  
   var chunks = [];
   const constraints = { audio: true };
   navigator.mediaDevices.getUserMedia(constraints).then(
@@ -17,16 +15,27 @@ if (navigator.mediaDevices.getUserMedia) {
       recordBtn.onclick = () => {
         if (mediaRecorder.state === "recording") {
           mediaRecorder.stop();
-          recordBtn.textContent = "record";
+          //recordBtn.textContent = "record";
+          gearL.style.animationName="turnR";
+          gearR.style.animationName="turnR";
           console.log("录音结束");
         } else {
           mediaRecorder.start();
+          gearL.style.animationIterationCount="infinite";
+          gearR.style.animationIterationCount="infinite";
+          gearL.style.animationName="turnL";
+          gearR.style.animationName="turnL";
           console.log("录音中...");
-          recordBtn.textContent = "stop";
+          //recordBtn.textContent = "stop";
         }
         console.log("录音器状态：", mediaRecorder.state);
       };
       
+      player.addEventListener('ended', () => {
+          gearL.style.animationIterationCount=0;
+          gearR.style.animationIterationCount=0;
+        console.log('audio end');
+      });
       downloadBtn.onclick = () => {
         if(player.src != null){
             var a = document.createElement('a');
@@ -41,11 +50,11 @@ if (navigator.mediaDevices.getUserMedia) {
       };
       var context = new (window.AudioContext || window.webkitAudioContext)();
       function play(buffer){
-        var source = context.createBufferSource();
         Array.prototype.reverse.call( buffer.getChannelData(0) );
-        source.buffer = buffer;
-        source.connect(context.destination);
-        source.start();
+        // var source = context.createBufferSource();
+        // source.buffer = buffer;
+        // source.connect(context.destination);
+        // source.start();
       }
       // Returns Uint8Array of WAV bytes
         function getWavBytes(buffer, options) {
@@ -143,6 +152,7 @@ if (navigator.mediaDevices.getUserMedia) {
             context.decodeAudioData(reader.result,(buffer)=>{
                 play(buffer);
                 transform(buffer);
+                player.play();
             },()=>{console.log("error");});
         }
         reader.readAsArrayBuffer(blob);

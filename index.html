@@ -4,31 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>audio record</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.7/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 
-<body>
-    <div id="app">
-        {{ message }}
+<body class="body">
+    <div class="container">
+    
+    
+    <button class="translate-btn"><svg width="387" height="248" xmlns="http://www.w3.org/2000/svg">
+     <g>
+      <g id="svg_2">
+       <g id="svg_26">
+        <rect fill="#8391AE" x="2" y="0.45303" width="383.00001" height="233.00001" id="svg_15" rx="6" stroke="null"/>
+        <rect fill="#8391AE" stroke="null" x="-0.5" y="154.45304" width="388" height="78" id="svg_16"/>
+        <rect fill="#8391AE" x="2.49998" y="213.45304" width="382.00002" height="34" id="svg_17" rx="6" stroke="null"/>
+       </g>
+       <g id="svg_27">
+        <ellipse fill="#000000" cx="18.00001" cy="16.45304" id="svg_18" rx="6" ry="6" stroke="null"/>
+        <ellipse fill="#000000" cx="369.00001" cy="16.45304" id="svg_22" rx="6" ry="6" stroke="null"/>
+       </g>
+       <rect fill="#232020" opacity="NaN" x="29.50001" y="25.45304" width="328.00001" height="155" id="svg_28" rx="6" stroke="null"/>
+       <g id="svg_88">
+        <path transform="rotate(90 290.327 220.184)" fill="#7c869b" d="m262.96459,195.157l54.7252,-16.6845l0,83.42253l-54.7252,0l0,-66.73803z" id="svg_83" stroke="null"/>
+        <path transform="rotate(90 96.786 220.184)" fill="#7c869b" d="m69.4237,245.21042l54.7252,16.68452l0,-83.4226l-54.7252,0l0,66.73808z" id="svg_84" stroke="null"/>
+        <rect fill="#7c869b" x="136.56132" y="192.96231" width="123.46537" height="54.5" id="svg_85" stroke="null"/>
+       </g>
+       <g id="svg_31">
+        <ellipse fill="#000000" cx="369.00001" cy="235.45304" id="svg_23" rx="6" ry="6" stroke="null"/>
+        <ellipse fill="#000000" cx="18.00001" cy="235.45304" id="svg_24" rx="6" ry="6" stroke="null"/>
+       </g>
+       <rect fill="#000000" x="90.50002" y="77.45304" width="206" height="72" id="svg_41" stroke="null"/>
+       <rect fill="#2d2b2b" opacity="NaN" x="36.66521" y="74.4509" width="313.66957" height="78.00214" id="svg_42" rx="5" stroke="null"/>
+       <g id="svg_71">
+        <ellipse fill="#778193" cx="264.85922" cy="112.98217" id="svg_60" rx="24" ry="24" stroke="null"/>
+        <ellipse fill="#ffffff" cx="264.85922" cy="112.98217" id="svg_61" rx="23" ry="23" stroke="null"/>
+        <g id="svg_64">
+         <rect fill="none" stroke-width="5" x="264.94466" y="92.30741" width="0.48544" height="3.39806" id="svg_62" stroke="#999999"/>
+         <rect fill="none" stroke-width="5" x="264.45923" y="130.17149" width="0.48544" height="3.39806" id="svg_63" stroke="#999999"/>
+        </g>
+        <g transform="rotate(60 264.944 112.938)" id="svg_67">
+         <rect fill="none" stroke-width="5" x="264.94466" y="92.30741" width="0.48544" height="3.39806" id="svg_65" stroke="#999999"/>
+         <rect fill="none" stroke-width="5" x="264.45923" y="130.17149" width="0.48544" height="3.39806" id="svg_66" stroke="#999999"/>
+        </g>
+        <g transform="rotate(120 264.944 112.938)" id="svg_70">
+         <rect fill="none" stroke-width="5" x="264.94466" y="92.30741" width="0.48544" height="3.39806" id="svg_68" stroke="#999999"/>
+         <rect fill="none" stroke-width="5" x="264.45923" y="130.17149" width="0.48544" height="3.39806" id="svg_69" stroke="#999999"/>
+        </g>
+       </g>
+       <rect fill="#2d2b2b" opacity="NaN" x="36.66522" y="153.7878" width="313.66957" height="23.43968" id="svg_74" rx="5" stroke="null"/>
+       <rect fill="#C48157" opacity="NaN" x="35.99784" y="28.98766" width="315.00429" height="43.46109" id="svg_75" rx="5"/>
+       <g id="svg_90">
+        <ellipse fill="#cefffa" cx="193.50001" cy="213.45304" id="svg_30" rx="6" ry="6" stroke="null"/>
+        <g id="svg_34">
+         <ellipse fill="#cefffa" cx="92.00001" cy="234.95304" id="svg_32" rx="7" ry="7" stroke="null"/>
+         <ellipse fill="#cefffa" cx="295.00001" cy="234.95304" id="svg_33" rx="7" ry="7" stroke="null"/>
+        </g>
+        <g id="svg_89">
+         <ellipse fill="#cefffa" cx="124.00001" cy="229.45304" id="svg_35" rx="6" ry="6" stroke="null"/>
+         <ellipse fill="#cefffa" cx="263.00001" cy="229.45304" id="svg_36" rx="6" ry="6" stroke="null"/>
+        </g>
+       </g>
+       <rect fill="#ffffff" opacity="NaN" x="75.22862" y="32.44919" width="258.08121" height="36.53801" id="svg_105" rx="5" stroke="null"/>
+       <text fill="#000000" x="81.96155" y="47.91458" id="svg_101" stroke-width="0" font-size="12" font-family="'Anton'" text-anchor="start" xml:space="preserve" font-weight="normal" font-style="normal">Oh!Xigei</text>
+       <rect fill="#000000" stroke-width="0" x="44.26924" y="34.83766" width="22.30769" height="23.07692" id="svg_102" rx="5" stroke="null"/>
+       <text fill="#ffffff" stroke="null" stroke-width="0" x="51.42308" y="52.52997" id="svg_104" font-size="16" font-family="'Anton'" text-anchor="start" xml:space="preserve">A</text>
+       <rect fill="#000000" stroke-width="0" x="77.34616" y="51.92557" width="236.15385" height="0.76923" id="svg_107"/>
+       <g id="svg_113">
+        <ellipse transform="rotate(12 122.141 112.982)" fill="#778193" cx="122.14075" cy="112.98212" id="svg_44" rx="24" ry="24" stroke="null"/>
+        <g id="svg_109">
+         <ellipse transform="rotate(12 122.141 112.982)" fill="#ffffff" cx="122.14075" cy="112.98212" id="svg_43" rx="23" ry="23" stroke="null"/>
+         <g transform="rotate(12 122.233 112.957)" id="svg_52">
+          <rect fill="none" stroke-width="5" x="122.23341" y="92.32609" width="0.48544" height="3.39806" id="svg_50" stroke="#999999"/>
+          <rect fill="none" stroke-width="5" x="121.74797" y="130.19016" width="0.48544" height="3.39806" id="svg_51" stroke="#999999"/>
+         </g>
+         <g transform="rotate(72 122.233 112.957)" id="svg_55">
+          <rect fill="none" stroke-width="5" x="122.23329" y="92.3255" width="0.48544" height="3.39806" id="svg_53" stroke="#999999"/>
+          <rect fill="none" stroke-width="5" x="121.74786" y="130.18957" width="0.48544" height="3.39806" id="svg_54" stroke="#999999"/>
+         </g>
+         <g transform="rotate(132 122.234 112.956)" id="svg_58">
+          <rect fill="none" stroke-width="5" x="122.23435" y="92.32574" width="0.48544" height="3.39806" id="svg_56" stroke="#999999"/>
+          <rect fill="none" stroke-width="5" x="121.74891" y="130.18982" width="0.48544" height="3.39806" id="svg_57" stroke="#999999"/>
+         </g>
+        </g>
+       </g>
+       <rect fill="#cefffa" stroke="null" x="153.91322" y="87.91907" width="77.41613" height="48.71877" id="svg_73" rx="1"/>
+        <g id="svg_4">
+       <g id="svg_1">
+        <ellipse fill="#000000" stroke-width="0" cx="265.55407" cy="111.7557" id="svg_120" rx="39" ry="39" stroke="null"/>
+        <ellipse fill="#ffffff" stroke-width="0" cx="265.55411" cy="111.7557" id="svg_121" rx="32" ry="32" stroke="null"/>
+       </g>
+       <g id="svg_2">
+        <ellipse fill="#000000" stroke-width="0" cx="121.44596" cy="111.7557" id="svg_108" rx="55" ry="55" stroke="null"/>
+        <ellipse fill="#ffffff" stroke-width="0" cx="121.446" cy="111.7557" id="svg_111" rx="32" ry="32" stroke="null"/>
+       </g>
+      </g>
+      </g>
+     </g>
+    </svg></button>
     </div>
-    <div>
-        {{message}}
-        <transition name="fade" mode="out-in">
-            <button class="translate-btn">录制</button>
-        </transition>
-        <button class="download-btn">下载</button>
-        <audio controls class="audio-player"></audio>
+    <div class="shadow">
+        <svg width="486" height="71" xmlns="http://www.w3.org/2000/svg" >
+            <defs>
+             <filter id="svg_114_blur" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur in="SourceGraphic" stdDeviation="7.2"/>
+             </filter>
+            </defs>
+            <g>
+             <title>Layer 1</title>
+             <ellipse fill="#2e514e" cx="242.99999" cy="35.5" id="svg_114" rx="232.90241" ry="13.79638" stroke="null" filter="url(#svg_114_blur)"/>
+            </g>
+           </svg>
     </div>
-    <script type="text/javascript">
-        var app = new Vue(
-            {
-                el: '#app',
-                data: {
-                    message: 'hello'
-                }
-            }
-        )
-    </script>
+    <button class="radio-btn">
+    </button>
+    <audio class="audio-player"></audio>
+    <button class="download-btn">Download Mp3</button>
     <script src="./translate.js"></script>
 </body>
 </html>
