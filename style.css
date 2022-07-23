@@ -13,6 +13,17 @@
     margin-left: -193.5px;
     margin-top: -124px;
   }
+  .button{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: .2rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color:#a3cbc7;
+  }
   .radio-btn{
   background-color:transparent;
   border-style:none;
