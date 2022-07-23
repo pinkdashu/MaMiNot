@@ -16,13 +16,15 @@ if (navigator.mediaDevices.getUserMedia) {
         if (mediaRecorder.state === "recording") {
           mediaRecorder.stop();
           //recordBtn.textContent = "record";
+          gearL.style.animationPlayState="paused";
+          gearR.style.animationPlayState="paused";
           gearL.style.animationName="turnR";
           gearR.style.animationName="turnR";
           console.log("录音结束");
         } else {
           mediaRecorder.start();
-          gearL.style.animationIterationCount="infinite";
-          gearR.style.animationIterationCount="infinite";
+          gearL.style.animationPlayState="running";
+          gearR.style.animationPlayState="running";
           gearL.style.animationName="turnL";
           gearR.style.animationName="turnL";
           console.log("录音中...");
@@ -32,9 +34,14 @@ if (navigator.mediaDevices.getUserMedia) {
       };
       
       player.addEventListener('ended', () => {
-          gearL.style.animationIterationCount=0;
-          gearR.style.animationIterationCount=0;
+        gearL.style.animationPlayState="paused";
+        gearR.style.animationPlayState="paused";
         console.log('audio end');
+      });
+      player.addEventListener('play', () => {
+        gearL.style.animationPlayState="running";
+        gearR.style.animationPlayState="running";
+        console.log('audio play');
       });
       downloadBtn.onclick = () => {
         if(player.src != null){

@@ -1,13 +1,23 @@
 .body{
     background-color: #cefffa;
   }
+
   .download-btn{
-    background-color:transparent;
+    background-color:transparent; 
     border-style:none;
-    color:#5c827d;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: .2rem;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color:#a3cbc7;
   }
   .container{
     position: absolute;
+    display: flex;
     top: 50%;
     left: 50%;
     margin-left: -193.5px;
@@ -55,14 +65,16 @@
   #svg_71{
     transform-origin:264.859px 112.982px;
     animation-name:turnL;
+    animation-play-state:paused;
     animation-timing-function: linear;
-    animation-iteration-count: 0;
+    animation-iteration-count: infinite;
     animation-duration:3s;
   }
   #svg_113{
     transform-origin:122.141px 112.982px;
     animation-name:turnL;
-    animation-iteration-count: 0;
+    animation-play-state:paused;
+    animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-duration:3s;
   }
